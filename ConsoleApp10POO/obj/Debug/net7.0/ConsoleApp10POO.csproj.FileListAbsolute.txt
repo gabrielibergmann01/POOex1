@@ -1,0 +1,15 @@
+C:\Users\gabrieli.bergmann\source\repos\ConsoleApp10POO\ConsoleApp10POO\obj\Debug\net7.0\ConsoleApp10POO.csproj.AssemblyReference.cache
+C:\Users\gabrieli.bergmann\source\repos\ConsoleApp10POO\ConsoleApp10POO\obj\Debug\net7.0\ConsoleApp10POO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gabrieli.bergmann\source\repos\ConsoleApp10POO\ConsoleApp10POO\obj\Debug\net7.0\ConsoleApp10POO.AssemblyInfoInputs.cache
+C:\Users\gabrieli.bergmann\source\repos\ConsoleApp10POO\ConsoleApp10POO\obj\Debug\net7.0\ConsoleApp10POO.AssemblyInfo.cs
+C:\Users\gabrieli.bergmann\source\repos\ConsoleApp10POO\ConsoleApp10POO\obj\Debug\net7.0\ConsoleApp10POO.csproj.CoreCompileInputs.cache
+C:\Users\gabrieli.bergmann\source\repos\ConsoleApp10POO\ConsoleApp10POO\bin\Debug\net7.0\ConsoleApp10POO.exe
+C:\Users\gabrieli.bergmann\source\repos\ConsoleApp10POO\ConsoleApp10POO\bin\Debug\net7.0\ConsoleApp10POO.deps.json
+C:\Users\gabrieli.bergmann\source\repos\ConsoleApp10POO\ConsoleApp10POO\bin\Debug\net7.0\ConsoleApp10POO.runtimeconfig.json
+C:\Users\gabrieli.bergmann\source\repos\ConsoleApp10POO\ConsoleApp10POO\bin\Debug\net7.0\ConsoleApp10POO.dll
+C:\Users\gabrieli.bergmann\source\repos\ConsoleApp10POO\ConsoleApp10POO\bin\Debug\net7.0\ConsoleApp10POO.pdb
+C:\Users\gabrieli.bergmann\source\repos\ConsoleApp10POO\ConsoleApp10POO\obj\Debug\net7.0\ConsoleApp10POO.dll
+C:\Users\gabrieli.bergmann\source\repos\ConsoleApp10POO\ConsoleApp10POO\obj\Debug\net7.0\refint\ConsoleApp10POO.dll
+C:\Users\gabrieli.bergmann\source\repos\ConsoleApp10POO\ConsoleApp10POO\obj\Debug\net7.0\ConsoleApp10POO.pdb
+C:\Users\gabrieli.bergmann\source\repos\ConsoleApp10POO\ConsoleApp10POO\obj\Debug\net7.0\ConsoleApp10POO.genruntimeconfig.cache
+C:\Users\gabrieli.bergmann\source\repos\ConsoleApp10POO\ConsoleApp10POO\obj\Debug\net7.0\ref\ConsoleApp10POO.dll
