@@ -1,31 +1,40 @@
-﻿using System.Reflection.Metadata;
+﻿using System.Net;
+using System.Reflection.Metadata;
 
 namespace ConsoleApp10POO
 {
-    internal class Program
+    public class Program
     {
         static void Main(string[] args)
         {
-            Pedido pedido = new Pedido();
-            pedido.Prato = "Risole";
+            Produto produto1= new Produto();
+            produto1.Prato = "Hamburguer";
+            produto1.Preco = 24.99;
+           
+            Produto produto2 = new Produto();
+            produto2.Prato = "Batata Frita";
+            produto2.Preco = 15.00;
 
-            pedido.DizerOi();
+            Produto produto3 = new Produto();
+            produto3.Prato = "Refrigerante";
+            produto3.Preco = 5.00;
 
-            Produto produto = new Produto();
-            produto.cargo = "Juíz";
-            produto.salario = 2.000;
-            produto.Nome = "Luis";
+            Produto produto4 = new Produto();
+            produto4.Prato = "Pizza";
+            produto4.Preco = 69.99;
 
-            produto.Print();
+            Pedido pedido1 = new Pedido();
+            pedido1.Numpedido = 1;
+            pedido1.PedidosLista.Add(produto1);
+            pedido1.PedidosLista.Add(produto3);
 
-            Produto produto1 = new Produto();
+            Pedido pedido2 = new Pedido();
+            pedido2.Numpedido = 2;
+            pedido2.PedidosLista.Add(produto4);
+            pedido2.PedidosLista.Add(produto3);
 
-            produto.cargo = "amigo";
-            produto.salario = 5.000;
-            produto.Nome = "Mario";
-
-            produto1.Print();
-
+            pedido1.Print();
+            pedido2.Print();
         }
     }
 }

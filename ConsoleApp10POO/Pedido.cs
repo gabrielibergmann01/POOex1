@@ -2,13 +2,29 @@
 {
     public class Pedido
     {
-        public string Prato { get; set; }
-        public string Pratinho { get; set; }
+        public int Numpedido;
+        
+        public List<Produto> PedidosLista= new List<Produto>();
 
-        public void DizerOi()
+
+        public double Total1()
         {
-            Console.WriteLine($"{Prato} tem no cardápio");
-
+            double total = 0;
+            foreach (Produto produto in PedidosLista)
+            {
+                total += produto.Preco;
+            }
+            return total;
+        }
+        public void Print() 
+        {
+            Console.WriteLine($"Pedido {Numpedido}");
+            Console.WriteLine("Itens:");
+            foreach (Produto produto in PedidosLista)
+            {
+                Console.WriteLine(produto.Prato);
+            }
+            Console.WriteLine($"Total: {Total1()}\n");
         }
     }
 }
