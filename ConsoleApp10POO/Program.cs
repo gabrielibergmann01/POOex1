@@ -1,5 +1,6 @@
 ﻿using System.Net;
 using System.Reflection.Metadata;
+using System.Security.Cryptography.X509Certificates;
 
 namespace ConsoleApp10POO
 {
@@ -7,34 +8,72 @@ namespace ConsoleApp10POO
     {
         static void Main(string[] args)
         {
-            Produto produto1= new Produto();
-            produto1.Prato = "Hamburguer";
-            produto1.Preco = 24.99;
-           
-            Produto produto2 = new Produto();
-            produto2.Prato = "Batata Frita";
-            produto2.Preco = 15.00;
+            try
+            {
 
-            Produto produto3 = new Produto();
-            produto3.Prato = "Refrigerante";
-            produto3.Preco = 5.00;
+                operação operacao = new operação();
+                int opcao;
 
-            Produto produto4 = new Produto();
-            produto4.Prato = "Pizza";
-            produto4.Preco = 69.99;
+                do
+                {
+                    Menu();
+                    opcao = int.Parse(Console.ReadLine());
+                    Escolhas(opcao, operacao);
+                    if (opcao == 0)
+                    {
+                        Console.WriteLine("Saindo...");
 
-            Pedido pedido1 = new Pedido();
-            pedido1.Numpedido = 1;
-            pedido1.PedidosLista.Add(produto1);
-            pedido1.PedidosLista.Add(produto3);
+                    } else if (opcao != 0)
+                    {
+                        Console.WriteLine("Digite Enter");
+                        Console.ReadLine();
+                    } 
+                    Console.Clear();
 
-            Pedido pedido2 = new Pedido();
-            pedido2.Numpedido = 2;
-            pedido2.PedidosLista.Add(produto4);
-            pedido2.PedidosLista.Add(produto3);
+                } while (opcao != 0);
+                
+                Console.WriteLine("Obrigada!");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message, "Opcão invalida");
+            }
 
-            pedido1.Print();
-            pedido2.Print();
+        }
+        static void Menu()
+        {
+            Console.WriteLine("""
+                1 - Cadastrar produto
+                2 - Lista dos produtos
+                3 - Fazer pedido 
+                4 - Pedidos feitos
+                0 - Sair
+                """);
+        }
+
+        static void Escolhas(int opcao, operação operacao)
+        {
+           switch (opcao)
+            {
+                case 1:
+                    operacao.Cadastrar();
+                    break;
+                case 2:
+                    operacao.ListaProdutos();
+                    break;
+                case 3:
+                    operacao.Fazerpedido();
+                    break;
+                case 4:
+                    operacao.PedidosFeitos();
+                    break;
+                case 0:
+                    break;
+                default:
+                    Console.WriteLine("Opção inválida");
+                    break;
+            }
         }
     }
+    
 }
