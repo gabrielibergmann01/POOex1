@@ -44,12 +44,12 @@ namespace ConsoleApp10POO
         }
         public double Valor()
         {
-            double soma = 0;
-            foreach (var produto in produtos)
+            double valor = 0;
+            foreach (var produtos in produtos)
             {
-                soma += produto.Preco;
+                valor += produtos.Preco;
             }
-            return soma;
+            return valor;
         }
 
         public void PedidosFeitos()
